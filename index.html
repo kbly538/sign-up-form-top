@@ -1,14 +1,84 @@
+</html>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="style.css">
-    <script src="passvalidation.js" defer></script>
+    <script src="validity.js" defer></script>
 </head>
+
 <body>
-    
+    <div class="body">
+        <section class="logo-section">
+            <div class="odin-logo">
+                <img src="src/odin-lined.png" alt="odin logo" id="odin-image" >
+                <div class="odin-text">ODIN</div>
+            </div>
+            <p>Photo by
+                <a href="https://unsplash.com/photos/25xggax4bSA">Halie West</a>
+                on
+                <a href="https://unsplash.com">Unsplash</a>
+            </p>
+        </section>
+
+        <section class="form-section">
+            <div class="form-header">
+                <p>This is not a real online service. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, delectus. Hic labore nesciunt
+                    asperiores a numquam quidem nihil rem provident magnam, officiis ab, illum eius nam! Pariatur
+                    temporibus quos doloremque.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, delectus. Hic labore nesciunt
+                    asperiores a numquam quidem nihil rem provident magnam, officiis ab, illum eius nam! Pariatur
+                    temporibus quos doloremque.
+                    </p>
+            </div>
+           
+            <div class="form-wrapper">
+                <form action="" method="post">
+                    
+                   <div class="inner-form-wrapper">
+                    <legend>Registration Form</legend>
+                    
+                    <div class="fieldset-wrapper">
+                            <label for="name">FIRST NAME
+                                <input type="text" name="name" id="name" minlength="2" maxlength="30" placeholder="Enter your first name" required>
+                                <span class="error"></span>
+                            </label>
+                            <label for="surname">LAST NAME
+                                <input type="text" name="surname" id="surname" minlength="2" maxlength="30" placeholder="Enter your last name" required>
+                                <span class="error"></span>
+                            </label>
+                            <label for="email">EMAIL
+                                <input type="email" name="email" id="email" placeholder="example@example.com" required>
+                                <span class="error"></span>
+                            </label>
+                            <label for="phonenumber">PHONENUMBER
+                                <input type="tel" name="phonenumber" id="phonenumber" placeholder="+909998887766" pattern="(\+)?\d{11,12}" required>
+                                <span class="error"></span>
+                            </label>
+                            <label for="password"> PASSWORD
+                                <input type="password" name="password" id="password" placeholder="*********" minlength="8" required>
+                                <span class="error"></span>
+                            </label>
+                            <label for="passwordRepeat">CONFIRM PASSWORD
+                                <input type="password" name="passwordRepeat" id="passwordRepeat"  placeholder="*********" minlength="8" required>
+                                <span class="error"></span>
+                            </label>
+
+                    </div>
+                   </div>
+                    <button type="submit" id="submit">Create Account</button>
+                </form>
+            </div>
+            <div class="login-text">
+                <p class="login">Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </section>
+    </div>
+
 </body>
+
 </html>
